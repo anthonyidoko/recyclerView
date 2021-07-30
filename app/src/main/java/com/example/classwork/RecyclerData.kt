@@ -2,7 +2,6 @@ package com.example.classwork
 
 import android.os.Parcel
 import android.os.Parcelable
-import android.widget.ImageView
 
 data class RecyclerData(
     var image: Int, var name: String?,

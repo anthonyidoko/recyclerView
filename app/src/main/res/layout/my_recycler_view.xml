@@ -3,9 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingStart="15dp">
-
+    android:layout_marginTop="15dp"
+    android:layout_marginStart="10dp"
+    android:layout_height="wrap_content"
+>
     <androidx.cardview.widget.CardView
         android:id="@+id/pixelCard"
         android:layout_width="150dp"
@@ -19,6 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
+            android:transitionName="theImage"
             android:src="@drawable/andrew_bg" />
     </androidx.cardview.widget.CardView>
 
@@ -30,6 +32,7 @@
         android:layout_marginTop="60dp"
         android:text="@string/image_name"
         android:textSize="20sp"
+        android:transitionName="theName"
         app:layout_constraintStart_toEndOf="@+id/pixelCard"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -38,6 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:visibility="gone"
+        android:transitionName="personalEmail"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -45,6 +49,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:visibility="gone"
+        android:transitionName="phoneNumber"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
