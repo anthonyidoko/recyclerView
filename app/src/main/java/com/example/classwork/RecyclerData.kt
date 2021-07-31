@@ -7,7 +7,8 @@ data class RecyclerData(
     var image: Int, var name: String?,
     var phoneNumber :String?, var email :String?
     )
-    : Parcelable {
+
+: Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readInt(),
         parcel.readString(),
